@@ -10,7 +10,7 @@ jobs:
     - uses: chanwit/action-eksctl-kale@v1
       with:
         region: ap-southeast-1
-        cluster: eks-kubeflow
+        cluster: kubeflow-test
         awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        awsSecretAccessKey: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        awsSecretAccessKey: ${{ secrets.SECRET_ACCESS_KEY }}
         notebook: titanic_ml_comparision.ipynb
